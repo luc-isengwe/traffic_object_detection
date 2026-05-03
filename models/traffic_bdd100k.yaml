@@ -1,0 +1,12 @@
+names:
+- person
+- bike
+- car
+- motor
+- bus
+- truck
+- rider
+nc: 7
+path: /kaggle/working/dataset
+train: train/images
+val: val/images

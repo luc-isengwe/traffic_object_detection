@@ -31,6 +31,7 @@ Final_project/
 ├── utils/
 │   ├── __init__.py           # Empty — marks utils/ as Python package
 │   ├── cascade.py
+|   ├── bonus.py
 │   ├── yolo_image.py
 │   ├── yolo_video.py
 │   ├── ssd_video.py
@@ -79,13 +80,6 @@ python main.py --model yolov11 \
     --scene intersection_1 \
     --show
 
-```bash
-python main.py --model yolov11 \
-    --model_path models/yolo11n.pt \
-    --filepath data/videos/traffic2.mp4 \
-    --scene intersection_1 \
-    --show
-
 python main.py --model cascade \
     --filepath data/images/stop_sign.jpg \
     --model_path models/stop_data.xml
@@ -117,9 +111,9 @@ Fine-Tune backup model has : `models/yolo11n_traffic_finetuned/weights/best.pt`
 python main.py --model yolov11 \
     --model_path models/yolo11n_traffic_finetuned/weights/best.pt \
     --filepath data/videos/traffic1.mp4 \
-    --scene intersection_finetuned \
+    --scene log1 \
     --show \
-    --output outputs/result_finetuned.avi
+    --output outputs/result1.avi
 ```
 
 ### STEP 7 — Streamlit interface (real time)
