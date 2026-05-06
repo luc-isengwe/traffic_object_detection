@@ -82,7 +82,7 @@ class HeatmapGenerator:
         plt.tight_layout()
         plt.savefig(output_path, dpi=150)
         plt.close()
-
+#######################################################################
 
 def plot_traffic_flow(count_history, scene_name, output_path="outputs/traffic_flow.png"):
     if not count_history:
